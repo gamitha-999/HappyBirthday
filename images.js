@@ -26,16 +26,16 @@ const IMAGES = {
     'images/harshi/WhatsApp Image 2026-06-24 at 19.34.35.jpeg'
   ],
   harshif: [
-    'images/harshif/WhatsApp Image 2026-06-24 at 19.11.45.jpeg',
+    'images/harshif/WhatsApp Image 2026-06-24 at 1129.11.45.jpeg',
     'images/harshif/WhatsApp Image 2026-06-24 at 19.11.19.jpeg',
     'images/harshif/WhatsApp Image 2026-06-24 at 19.11.34.jpeg',
     'images/harshif/WhatsApp Image 2026-06-24 at 19.11.35.jpeg',
     'images/harshif/WhatsApp Image 2026-06-24 at 19.11.36.jpeg',
     'images/harshif/WhatsApp Image 2026-06-24 at 19.11.39.jpeg',
-    'images/harshif/WhatsApp Image 2026-06-24 at 19.11.39 (12).jpeg',
+    'images/harshif/WhatsApp Image 2026-06-24 at 19.11.3912.jpeg',
     'images/harshif/WhatsApp Image 2026-06-24 at 19.11.45.jpeg',
     'images/harshif/WhatsApp Image 2026-06-24 at 19.35.31.jpeg',
-    'images/harshif/WhatsApp Image 2026-06-24 at 19.11.39 (2).jpeg'
+    'images/harshif/WhatsApp Image 2026-06-24 at12 19.11.39.jpeg'
   ]
 };
 
