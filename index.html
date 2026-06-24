@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Twins 🎂✨</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body { background: #0a0a0f; color: #fff; min-height: 100vh; }
+    .section.active { opacity: 1; visibility: visible; z-index: 10; }
+    canvas { position: fixed; inset: 0; pointer-events: none; z-index: 1; }
+    .no-js-fallback { display: none; text-align: center; padding: 3rem 1.5rem; }
+  </style>
+  <noscript>
+    <style>
+      .no-js-fallback { display: flex !important; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; }
+      .section:not(.active) { display: none !important; }
+    </style>
+  </noscript>
+</head>
+<body>
+  <noscript>
+    <div class="no-js-fallback">
+      <div style="font-size:4rem;margin-bottom:1.5rem;">🎂✨</div>
+      <h1 style="font-family:'Playfair Display',serif;font-size:clamp(2rem,6vw,4rem);background:linear-gradient(135deg,#ec4899,#a855f7,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Happy Birthday Twins</h1>
+      <p style="color:rgba(255,255,255,0.5);margin-top:1rem;">Please enable JavaScript for the full experience ✨</p>
+    </div>
+  </noscript>
+  <canvas id="particlesCanvas"></canvas>
+  <canvas id="sparklesCanvas"></canvas>
+  <canvas id="heartsCanvas"></canvas>
+  <canvas id="celebrationCanvas"></canvas>
+  <canvas id="orbsCanvas"></canvas>
+
+  <div id="floatingGlassContainer"></div>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close">&times;</button>
+    <img class="lightbox-img" src="" alt="Lightbox">
+  </div>
+
+  <div id="transitionOverlay" class="transition-overlay">
+    <div class="transition-orb"></div>
+    <div class="transition-glow"></div>
+    <div class="transition-flash"></div>
+  </div>
+
+  <!-- ===== LANDING ===== -->
+  <section id="section-landing" class="section active">
+    <div class="landing-bg">
+      <div class="landing-bg-orb" style="--x:15%;--y:25%;--s:40rem;--d:0s;"></div>
+      <div class="landing-bg-orb" style="--x:75%;--y:60%;--s:50rem;--d:-3s;"></div>
+      <div class="landing-bg-orb" style="--x:50%;--y:10%;--s:30rem;--d:-7s;"></div>
+      <div class="landing-bg-orb" style="--x:85%;--y:80%;--s:35rem;--d:-5s;"></div>
+      <div class="landing-bg-orb" style="--x:20%;--y:70%;--s:25rem;--d:-9s;"></div>
+    </div>
+    <div class="section-inner">
+      <div class="landing-content">
+        <div class="hero-icon">🎂✨</div>
+        <h1 class="hero-title"><span class="text-gradient">Happy Birthday Twins</span></h1>
+        <p class="hero-subtitle">A magical celebration for two incredible souls</p>
+        <p class="hero-question">Who are you?</p>
+        <div class="twin-cards">
+          <div class="twin-card glass" data-twin="harsha">
+            <div class="twin-card-glow"></div>
+            <span class="twin-card-emoji">🌸</span>
+            <h2>Harsha</h2>
+            <p>Elegant. Beautiful. Unforgettable. ✨</p>
+          </div>
+          <div class="twin-card glass" data-twin="harshi">
+            <div class="twin-card-glow"></div>
+            <span class="twin-card-emoji">🌷</span>
+            <h2>Harshi</h2>
+            <p>Playful. Energetic. Absolutely adorable. 💖</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HARSHA PAGE ===== -->
+  <section id="section-harsha" class="section page-section" data-twin="harsha">
+    <div class="page-parallax" id="harshaParallax">
+      <div class="page-hero-img" id="harshaHeroImg">
+        <div class="hero-bg-blur"></div>
+        <img class="hero-main-img" alt="Harsha">
+      </div>
+      <div class="page-hero-overlay"></div>
+    </div>
+    <div class="page-scroll-content">
+      <div class="page-hero-content">
+        <div class="hero-emoji-wrap"><span class="hero-emoji">🌸</span></div>
+        <h1 class="hero-name"><span class="text-gradient">Happy Birthday Harsha</span></h1>
+        <p class="hero-tagline">Elegant. Beautiful. Unforgettable.</p>
+        <div class="page-hero-card glass" data-tilt>
+          <div class="page-hero-card-emoji">💖</div>
+          <p>Another year of grace, beauty, and unforgettable moments. You light up every room you walk into.</p>
+        </div>
+      </div>
+
+      <div class="content-section" data-animate="stagger">
+        <div class="section-title-wrapper">
+          <h2 class="section-title text-gradient">Beautiful Gallery</h2>
+          <p class="section-subtitle">Moments captured just for you</p>
+        </div>
+        <div class="masonry-grid" id="harshaGallery"></div>
+      </div>
+
+      <div class="content-section" data-animate="stagger">
+        <div class="section-title-wrapper">
+          <h2 class="section-title text-gradient">Funny Moments</h2>
+        </div>
+        <div class="polaroid-grid" id="harshaFunGrid"></div>
+      </div>
+
+      <div class="content-section" data-animate>
+        <div class="wish-card glass wish-card-elegant" data-tilt>
+          <span class="wish-card-icon">💌</span>
+          <h3>Happy Birthday Harsha ❤️</h3>
+          <p>Wishing you happiness, success, beautiful memories and endless smiles. May this year bring everything you dream about and more. You are truly one of a kind. Your grace and elegance inspire everyone around you.</p>
+          <div class="wish-card-emojis"><span>❤️</span><span>✨</span><span>🌟</span><span>💫</span><span>🎂</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HARSHI PAGE ===== -->
+  <section id="section-harshi" class="section page-section" data-twin="harshi">
+    <div class="page-parallax" id="harshiParallax">
+      <div class="page-hero-img" id="harshiHeroImg">
+        <div class="hero-bg-blur"></div>
+        <img class="hero-main-img" alt="Harshi">
+      </div>
+      <div class="page-hero-overlay"></div>
+    </div>
+    <div class="page-scroll-content">
+      <div class="page-hero-content">
+        <div class="hero-emoji-wrap"><span class="hero-emoji">🌷</span></div>
+        <h1 class="hero-name"><span class="text-gradient">Happy Birthday Harshi</span></h1>
+        <p class="hero-tagline">Playful. Energetic. Absolutely adorable.</p>
+        <div class="page-hero-card glass page-hero-card-harshi" data-tilt>
+          <div class="page-hero-card-emoji">🎉</div>
+          <p>Your energy lights up every room and your smile is truly contagious. Keep being the amazing person you are!</p>
+        </div>
+      </div>
+
+      <div class="content-section" data-animate="stagger">
+        <div class="section-title-wrapper">
+          <h2 class="section-title text-gradient">Beautiful Gallery</h2>
+          <p class="section-subtitle">Capturing your beautiful moments</p>
+        </div>
+        <div class="masonry-grid" id="harshiGallery"></div>
+      </div>
+
+      <div class="content-section" data-animate="stagger">
+        <div class="section-title-wrapper">
+          <h2 class="section-title text-gradient">Funny Moments</h2>
+        </div>
+        <div class="playful-grid" id="harshiFunGrid"></div>
+      </div>
+
+      <div class="content-section" data-animate>
+        <div class="wish-card glass wish-card-fun" data-tilt>
+          <span class="wish-card-icon">🎉</span>
+          <h3>Happy Birthday Harshi! 🎈🎈</h3>
+          <p>Wishing you a year filled with laughter, adventure, and everything you've been dreaming of. Your energy lights up every room and your smile is truly contagious. Keep being the amazing person you are!</p>
+          <div class="wish-card-emojis"><span>🎉</span><span>🎈</span><span>🌟</span><span>💫</span><span>🎂</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    (function() {
+      var landing = document.getElementById('section-landing');
+      if (landing && !landing.classList.contains('active')) {
+        landing.classList.add('active');
+      }
+      setTimeout(function() {
+        var landing = document.getElementById('section-landing');
+        if (!landing) return;
+        var heroTitle = landing.querySelector('.hero-title');
+        var isInvisible = !heroTitle || parseFloat(getComputedStyle(heroTitle).opacity) < 0.5;
+        if (!isInvisible) return;
+        landing.style.opacity = '1';
+        landing.style.visibility = 'visible';
+        landing.classList.add('active');
+        landing.querySelectorAll('[style*="opacity"]').forEach(function(el) {
+          if (parseFloat(el.style.opacity) < 0.5) el.style.opacity = '1';
+        });
+        landing.querySelectorAll('[style*="transform"]').forEach(function(el) {
+          el.style.transform = 'none';
+        });
+        landing.querySelectorAll('.hero-icon, .hero-title, .hero-subtitle, .hero-question, .twin-card').forEach(function(el) {
+          el.style.opacity = '1';
+          el.style.transform = 'none';
+        });
+        landing.querySelectorAll('[data-animate]').forEach(function(el) {
+          el.style.opacity = '1';
+        });
+      }, 2500);
+    })();
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/images.js"></script>
+  <script src="js/effects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
