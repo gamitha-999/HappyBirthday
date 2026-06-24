@@ -26,7 +26,7 @@ const IMAGES = {
     'images/harshi/WhatsApp%20Image%202026-06-24%20at%2019.34.35.jpeg'
   ],
   harshif: [
-    'images/harshif/WhatsApp%20Image%202026-06-24%20at%201129.11.45.jpeg',
+    'images/harshif/WhatsApp%20Image%202026-06-24%20at%2019.11.45.jpeg',
     'images/harshif/WhatsApp%20Image%202026-06-24%20at%2019.11.19.jpeg',
     'images/harshif/WhatsApp%20Image%202026-06-24%20at%2019.11.34.jpeg',
     'images/harshif/WhatsApp%20Image%202026-06-24%20at%2019.11.35.jpeg',
